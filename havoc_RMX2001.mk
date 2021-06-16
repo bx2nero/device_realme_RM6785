@@ -23,6 +23,7 @@ $(call inherit-product, device/realme/RMX2001/device.mk)
 
 # Inherit some common Havoc OS stuff.
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := havoc_RMX2001
