@@ -157,6 +157,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleCameraGo
 
+#Realme Parts
+PRODUCT_PACKAGES += \
+    RealmeParts
+
 # Misc
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.controls.xml:system/etc/permissions/android.software.controls.xml
