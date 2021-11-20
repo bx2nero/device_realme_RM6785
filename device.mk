@@ -30,7 +30,6 @@ $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
-PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -47,7 +46,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-service
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc/audio_policy_configuration.xml \
+    $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_VNDK_VERSION)/etc/audio_policy_configuration.xml \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
