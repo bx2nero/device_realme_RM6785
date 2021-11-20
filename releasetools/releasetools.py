@@ -31,6 +31,12 @@ def AddImage(info, basename, dest):
   common.ZipWriteStr(info.output_zip, name, data)
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
+def FullOTA_InstallBegin(info):
+  data = info.input_zip.read("RADIO/dynamic-remove-oplus")
+  common.ZipWriteStr(info.output_zip, "dynamic-remove-oplus", data)
+  info.script.AppendExtra('update_dynamic_partitions(package_extract_file("dynamic-remove-oplus"));')
+  return
+
 def OTA_InstallEnd(info):
   info.script.Print("Patching firmware images...")
   # AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
