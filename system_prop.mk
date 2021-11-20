@@ -88,3 +88,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Priv-app permission
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
+
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+     persist.bluetooth.bluetooth_audio_hal.disabled=true
