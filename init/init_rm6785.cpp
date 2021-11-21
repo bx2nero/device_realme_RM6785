@@ -41,18 +41,18 @@ void property_override_multifp(char const buildfp[], char const systemfp[],
     property_override(vendorfp, value);
 }
 
-void load_rmx2001() {
-    property_override("ro.product.name", "RMX2001");
-    property_override("ro.product.model", "RMX2001");
-    property_override("ro.product.system.model", "RMX2001");
-    property_override("ro.build.product", "RMX2001");
-    property_override("ro.product.device", "RMX2001");
+void load_rm6785() {
+    property_override("ro.product.name", "RM6785");
+    property_override("ro.product.model", "RM6785");
+    property_override("ro.product.system.model", "RM6785");
+    property_override("ro.build.product", "RM6785");
+    property_override("ro.product.device", "RM6785");
     property_override("ro.build.description", "full_oppo6785-user 10 QP1A.190711.020 0b36b6c4f9b3bf3b release-keys");
 }
 
 void vendor_load_properties() {
 
-    load_rmx2001();
+    load_rm6785();
 
     property_override("ro.oem_unlock_supported", "0");
 }

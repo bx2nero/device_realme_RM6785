@@ -19,17 +19,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device makefile
-$(call inherit-product, device/realme/RMX2001/device.mk)
+$(call inherit-product, device/realme/RM6785/device.mk)
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_RMX2001
-PRODUCT_DEVICE := RMX2001
+PRODUCT_NAME := aosp_RM6785
+PRODUCT_DEVICE := RM6785
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme G90T Series
+PRODUCT_MODEL := Realme 6 (G90T Series)/ 7/ N20P/ N304G
 PRODUCT_MANUFACTURER := realme
 
 # Build info

@@ -18,7 +18,7 @@
 
 set -e
 
-export DEVICE=RMX2001
+export DEVICE=RM6785
 export VENDOR=realme
 
 INITIAL_COPYRIGHT_YEAR=2020
@@ -40,7 +40,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false
 
 # Copyright headers and guards
-write_headers "RMX2001"
+write_headers "RM6785"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
