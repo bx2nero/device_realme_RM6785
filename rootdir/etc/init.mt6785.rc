@@ -49,6 +49,9 @@ on property:sys.boot_completed=1
     write /proc/touchpanel/oplus_tp_limit_enable 0
     write /proc/touchpanel/oplus_tp_direction 1
 
+    # Update fastcharge firmware
+    write /proc/fastchg_fw_update 1
+
     # Restrict permissions to socket file 
     # to hide Magisk & co.
     chmod 440 /proc/net/unix
